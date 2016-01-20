@@ -1,5 +1,5 @@
-$font-stack: "Titillium", arial, sans-serif;
-$font-secondary-stack: "Cinzel", serif;
+$font-body-stack: "Titillium", arial, sans-serif;
+$font-header-stack: "Cinzel", serif;
 
 $text-color: #fff;
 $grey: #94a4a4;
@@ -8,22 +8,14 @@ $darkGrey: #333333;
 body{
 margin: 0;
 padding: 0;
-width: 100%;
 background-color: $darkGrey;
-}
-
-h1 {
-font: $font-stack;
-font-weight:normal;
-font-size: 55px;
-text-align: center;
-color: $text-color;
-margin: 0;
-padding: 0;
+font-family: $font-body-stack;
+line-height:1.5em;
+color:$grey;
 }
 
 h2 {
-font: $font-stack;
+font-family: $font-header-stack;
 font-weight: normal;
 font-size: 40px;
 text-align: center;
@@ -33,10 +25,11 @@ padding: 0;
 }
 
 h3 {
-font: $font-stack;
+font: $font-header-stack;
 font-weight: normal;
-font-size: 16px;
-text-align: center;
+font-size:18px;
+font-style: italic;
+text-align: left;
 margin: 5px 0;
 padding: 0;
 z-index: 1;
@@ -57,7 +50,7 @@ background-color: $grey;
 }
 
 #nav { width: 410px; float: right; margin-top: 20px; }
-#logo a { color: $text-color; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: $text-color; font:$font-stack; font-weight: bold; }
+#logo a { color: $text-color; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: $text-color; font:$font-body-stack; font-weight: bold; }
 #nav ul{
 list-style: none;
 display: block;
@@ -71,7 +64,7 @@ float: left;
 padding-left: 21px;
 }
 
-#nav li a { color: $text-color; opacity:0.6; font-size: 16px; text-decoration: none; font: $font-stack; }
+#nav li a { color: $text-color; opacity:0.6; font-size: 16px; text-decoration: none; font: $font-body-stack; }
 #nav li a.active { color: $text-color; opacity:1; border-bottom: 2px solid $text-color; }
 #nav li a:hover { color: $text-color; opacity:1; }
 
@@ -135,5 +128,5 @@ color: $text-color;
 background-size: cover;
 }
 
-#copyright { color: $text-color; font: $font-secondary-stack; font-size: 14px; margin-top: 100px; text-align: center; }
+#copyright { color: $text-color; font: $font-header-stack; font-size: 14px; margin-top: 100px; text-align: center; }
 #copyright a { text-decoration: none; color: $text-color; }
