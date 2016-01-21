@@ -6,24 +6,24 @@ $grey: #94a4a4;
 $darkGrey: #333333;
 $navColor: #fff;
 
-body{
+html, body{
 margin: 0;
 padding: 0;
-background-color: $darkGrey;
-font-family: $font-body-stack;
-line-height:1.5em;
-color:$grey;
 height: 100%;
 width: 100%;
 }
 
 .navigation{
     position:fixed;     
-    z-index:1;      
+    z-index:4;      
     margin: 10px 0 0 10px;;
-    background-color: $darkGrey;
     width: 100%;
     padding: 0;
+}
+
+.swlogo {
+    float:right;
+    margin-right:20px;
 }
 
 h2 {
@@ -33,9 +33,10 @@ font-size: 40px;
 text-align: center;
 color: $text-color;
 margin: 0;
-padding: 0;
-line-height:1.4em;
+padding: 100px;
+text-shadow: 2px 2px #000;
 }
+
 
 h3 {
 font: $font-header-stack;
@@ -46,44 +47,69 @@ text-align: left;
 margin: 5px 0;
 padding: 0;
 position: relative;
+width:20%;
 }
 
-#box{
+
+.slide {
     background-attachment: fixed;
     width:100%;
     height:100%;
     position: relative;
-    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 
-/*.bg1 {background-image: url(images/episode1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center center;}
-.bg2 {background-image: url(images/episode2.jpg) no-repeat center center fixed; background-size:cover;}
-.bg3 {background-image: url(images/episode3.jpg) no-repeat center center fixed; background-size:cover;}
-.bg4 {background-image: url(images/episode4.jpg) no-repeat center center fixed; background-size:cover;}
-.bg5 {background-image: url(images/episode5.jpg) no-repeat center center fixed; background-size:cover;}
-.bg6 {background-image: url(images/episode6.jpg) no-repeat center center fixed; background-size:cover;}
-.bg7 {background-image: url(images/episode7.jpg) no-repeat center center fixed; background-size:cover;}*/
-
-
-#test {
-    width: 100%;
-    height: auto;
-    background-image: url('images/episode1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: inherit;
-    z-index:-1;
-    position:fixed;
+#slide1{
+    background-image:url("../images/episode1.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:#5c9900;
 }
-
-/*#test2 {
-  z-index: 1;
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  height: auto;
-  position:fixed;
-}*/
+#slide2{
+    background-image:url(../images/episode2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:#588990;
+}
+#slide3{
+    background-image:url(../images/episode3.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide4{
+    background-image:url(../images/episode4.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide5{
+    background-image:url(../images/episode5.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide6{
+    background-image:url(../images/episode6.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide7{
+    background-image:url(../images/episode7.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .wrapper {
     width:960px;
@@ -92,4 +118,38 @@ position: relative;
     position:relative;
 }
 
+.button{
+    display:block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    background-color:#333333;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+}
+
+.button:hover{
+    background-color:#494949;
+    cursor:pointer;
+}
+
 .padding-top--md {padding-top:20px;}
+
+.parallaxbg{
+    position:absolute;
+    font-size:28px;
+    margin:0;
+    padding:0;
+}
+
+.slideno {
+    position:absolute;
+    bottom:40px;
+    left:0px;
+    width:30%;
+    margin-left:30px;
+    line-height:1.5em;
+    color:rgba(255,255,255,0.9);
+}
