@@ -9,7 +9,7 @@ html, body {
   z-index: 4;
   margin: 10px 0 0 10px;
   width: 100%;
-  padding: 0;
+  padding: 0 0 10px 0;
   bottom: 0; }
 
 .swlogo {
@@ -45,12 +45,11 @@ h3 {
 
 #slide1 {
   background-image: url("../images/episode1.jpg");
-  background-position: center center;
+  background-position: 0 0 center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-color: #5c9900; }
+  background-size: cover; }
 
 #slide2 {
   background-image: url(../images/episode2.jpg);
@@ -58,42 +57,47 @@ h3 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #588990; }
+  background-position: 0 0 center center; }
 
 #slide3 {
   background-image: url(../images/episode3.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 0 center center; }
 
 #slide4 {
   background-image: url(../images/episode4.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 0 center center; }
 
 #slide5 {
   background-image: url(../images/episode5.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 0 center center; }
 
 #slide6 {
   background-image: url(../images/episode6.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 0 center center; }
 
 #slide7 {
   background-image: url(../images/episode7.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 0 center center; }
 
 .wrapper {
   width: 960px;
@@ -110,7 +114,8 @@ h3 {
   left: 50%;
   background-color: #333333;
   background-image: url(../images/arrow.png);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 200; }
 
 .button:hover {
   background-color: #494949;

@@ -3,7 +3,8 @@ jQuery(document).ready(function ($) {
  
     //initialise Stellar.js
     $(window).stellar();
- 
+
+    
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
@@ -31,14 +32,6 @@ jQuery(document).ready(function ($) {
  
     });
  
-    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class 
-    //from navigation link slide 2 and adds it to navigation link slide 1. 
-    mywindow.scroll(function () {
-        if (mywindow.scrollTop() === 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
-        }
-    });
  
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
